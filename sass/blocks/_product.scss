@@ -1,0 +1,41 @@
+.product {
+    height: 849px;
+    background-image: url("../img/product.svg");
+    background-repeat: no-repeat;
+    background-position: center top 136px;
+    padding-top: 262px;
+}
+.product__list {
+    @include reset-list;
+    display: flex;
+    justify-content: center
+}
+.product__item:last-child {
+    margin-right: 0;
+}
+.product__item {
+    width: 255px;
+    margin-right: 30px;
+    text-align: center;
+}
+.product__item::before {
+    background-image: url("../img/product-item.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+    content: "";
+    display: block;
+    width: 255px;
+    height: 193px;
+    margin-bottom: 71px;
+}
+.product__item-title {
+    margin-bottom: 24px;
+    font-size: 24px;
+    line-height: 32px;
+    color: #333D4B;
+    font-family: "Fraunes";
+}
+.product__item-text {
+    color: #333D4B;
+    font-size: 16px;
+}

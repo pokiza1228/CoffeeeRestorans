@@ -1,0 +1,1001 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+     ========================================================================== */
+/**
+   * Remove the margin in all browsers.
+   */
+body {
+  margin: 0;
+}
+
+/**
+   * Render the `main` element consistently in IE.
+   */
+main {
+  display: block;
+}
+
+/**
+   * Correct the font size and margin on `h1` elements within `section` and
+   * `article` contexts in Chrome, Firefox, and Safari.
+   */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+     ========================================================================== */
+/**
+   * 1. Add the correct box sizing in Firefox.
+   * 2. Show the overflow in Edge and IE.
+   */
+hr {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+     ========================================================================== */
+/**
+   * Remove the gray background on active links in IE 10.
+   */
+a {
+  background-color: transparent;
+}
+
+/**
+   * 1. Remove the bottom border in Chrome 57-
+   * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+   */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+   * Add the correct font weight in Chrome, Edge, and Safari.
+   */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+   * Add the correct font size in all browsers.
+   */
+small {
+  font-size: 80%;
+}
+
+/**
+   * Prevent `sub` and `sup` elements from affecting the line height in
+   * all browsers.
+   */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+     ========================================================================== */
+/**
+   * Remove the border on images inside links in IE 10.
+   */
+img {
+  border-style: none;
+}
+
+/* Forms
+     ========================================================================== */
+/**
+   * 1. Change the font styles in all browsers.
+   * 2. Remove the margin in Firefox and Safari.
+   */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+   * Show the overflow in IE.
+   * 1. Show the overflow in Edge.
+   */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+   * Remove the inheritance of text transform in Edge, Firefox, and IE.
+   * 1. Remove the inheritance of text transform in Firefox.
+   */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+   * Correct the inability to style clickable types in iOS and Safari.
+   */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+   * Remove the inner border and padding in Firefox.
+   */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+   * Restore the focus styles unset by the previous rule.
+   */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+   * Correct the padding in Firefox.
+   */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+   * 1. Correct the text wrapping in Edge and IE.
+   * 2. Correct the color inheritance from `fieldset` elements in IE.
+   * 3. Remove the padding so developers are not caught out when they zero out
+   *    `fieldset` elements in all browsers.
+   */
+legend {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+   * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+   */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+   * Remove the default vertical scrollbar in IE 10+.
+   */
+textarea {
+  overflow: auto;
+}
+
+/**
+   * 1. Add the correct box sizing in IE 10.
+   * 2. Remove the padding in IE 10.
+   */
+[type="checkbox"],
+[type="radio"] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+   * Correct the cursor style of increment and decrement buttons in Chrome.
+   */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+   * 1. Correct the odd appearance in Chrome and Safari.
+   * 2. Correct the outline style in Safari.
+   */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+   * Remove the inner padding in Chrome and Safari on macOS.
+   */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+   * 1. Correct the inability to style clickable types in iOS and Safari.
+   * 2. Change font properties to `inherit` in Safari.
+   */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+     ========================================================================== */
+/*
+   * Add the correct display in Edge, IE 10+, and Firefox.
+   */
+details {
+  display: block;
+}
+
+/*
+   * Add the correct display in all browsers.
+   */
+summary {
+  display: list-item;
+}
+
+/* Misc
+     ========================================================================== */
+/**
+   * Add the correct display in IE 10+.
+   */
+template {
+  display: none;
+}
+
+/**
+   * Add the correct display in IE 10.
+   */
+[hidden] {
+  display: none;
+}
+
+@font-face {
+  font-family: 'Fraunces';
+  src: url("Fraunces-Black.woff2") format("woff2"), url("Fraunces-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Barlow';
+  src: url("Barlow-Bold.woff2") format("woff2"), url("Barlow-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Barlow';
+  src: url("Barlow-Regular.woff2") format("woff2"), url("Barlow-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  font-family: "Barlow", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+.header {
+  padding: 43px 0;
+}
+
+.header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.nav__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav__list-item {
+  margin-right: 33px;
+}
+
+.nav__list-item:last-child {
+  margin-right: 0;
+}
+
+.nav__list-item-link {
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.923077px;
+  text-transform: uppercase;
+  color: #83888F;
+  font-weight: 700;
+}
+
+.nav__list-item-link:hover {
+  color: #333D4B;
+}
+
+.intro {
+  background-image: url("../img/intro-bg-desktop.jpg");
+  background-repeat: no-repeat;
+  height: 600px;
+  padding-top: 117px;
+}
+
+.intro__content {
+  width: 493px;
+  padding-left: 86px;
+}
+
+.intro__title {
+  color: #FEFCF7;
+  font-size: 72px;
+  line-height: 72px;
+  font-family: "Fraunes";
+}
+
+.intro__text {
+  font-size: 16px;
+  line-height: 26px;
+  color: rgba(254, 252, 247, 0.8);
+  mix-blend-mode: normal;
+  margin-top: 32px;
+  margin-bottom: 46px;
+}
+
+.main-link {
+  width: 217px;
+  height: 56px;
+  background-color: #66d2cf;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: #FEFCF7;
+  padding: 15px 31px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-family: "Fraunes";
+}
+
+.product {
+  height: 849px;
+  background-image: url("../img/product.svg");
+  background-repeat: no-repeat;
+  background-position: center top 136px;
+  padding-top: 262px;
+}
+
+.product__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.product__item:last-child {
+  margin-right: 0;
+}
+
+.product__item {
+  width: 255px;
+  margin-right: 30px;
+  text-align: center;
+}
+
+.product__item::before {
+  background-image: url("../img/product-item.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  content: "";
+  display: block;
+  width: 255px;
+  height: 193px;
+  margin-bottom: 71px;
+}
+
+.product__item-title {
+  margin-bottom: 24px;
+  font-size: 24px;
+  line-height: 32px;
+  color: #333D4B;
+  font-family: "Fraunes";
+}
+
+.product__item-text {
+  color: #333D4B;
+  font-size: 16px;
+}
+
+.advantage__container {
+  padding-top: 100px;
+  text-align: center;
+  position: relative;
+}
+
+.advantage__container::before {
+  background-color: #2c343e;
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  display: block;
+  z-index: -1;
+  height: 577px;
+  content: "";
+  top: 0;
+}
+
+.advantage__title {
+  font-size: 40px;
+  color: #FEFCF7;
+  margin-bottom: 32px;
+  font-family: "Fraunes";
+}
+
+.advantage__text {
+  font-size: 16px;
+  line-height: 26px;
+  color: rgba(254, 252, 247, 0.8);
+  mix-blend-mode: normal;
+  width: 540px;
+  margin: 0 auto 86px;
+}
+
+.advantage__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.advantage__item {
+  margin-right: 30px;
+  width: 350px;
+  background-color: #0e8784;
+  color: #FEFCF7;
+  padding: 200px 48px 48px;
+  position: relative;
+  border-radius: 8px;
+}
+
+.advantage__item:last-child {
+  margin-right: 0;
+}
+
+.advantage__item--best::before {
+  content: "";
+  background-image: url("../img/best.png");
+  display: block;
+  position: absolute;
+  top: 72px;
+  left: 136px;
+  width: 71px;
+  height: 72px;
+}
+
+.advantage__item--benifit::before {
+  content: "";
+  background-image: url("../img/benifit.png");
+  display: block;
+  position: absolute;
+  top: 72px;
+  left: 136px;
+  width: 72px;
+  height: 72px;
+}
+
+.advantage__item--shipping::before {
+  content: "";
+  background-image: url("../img/shipping.png");
+  background-repeat: no-repeat;
+  display: block;
+  position: absolute;
+  width: 72px;
+  height: 50px;
+  top: 83px;
+  left: 136px;
+}
+
+.advantage__item-title {
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  margin-bottom: 24px;
+  font-family: "Fraunes";
+}
+
+.advantage__item-text {
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.servises__container {
+  padding: 351px 86px 0;
+  position: relative;
+  padding-bottom: 200px;
+}
+
+.servises__title {
+  font-size: 24px;
+  line-height: 32px;
+  color: #83888F;
+  margin-bottom: 80px;
+  font-family: "Fraunes";
+}
+
+.hr {
+  width: 760px;
+  height: 1px;
+  background-color: #fdd6ba;
+  border: 2px solid #FDD6BA;
+  position: absolute;
+  left: 101px;
+  top: 476px;
+}
+
+.servises__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  list-style: none;
+}
+
+.servises__item {
+  width: 285px;
+  margin-right: 95px;
+  height: 455px;
+  padding-top: 208px;
+  position: relative;
+}
+
+.servises__item::after {
+  content: "";
+  width: 31px;
+  height: 31px;
+  display: block;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 3px solid #00aef3;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.servises__item:last-child {
+  margin-right: 0;
+}
+
+.servises__item--pick::before {
+  background-image: url("../img/01.png");
+  background-repeat: no-repeat;
+  display: block;
+  width: 90px;
+  height: 72px;
+  position: absolute;
+  left: 0;
+  top: 98px;
+  content: "";
+}
+
+.servises__item--choose::before {
+  background-image: url("../img/02.png");
+  background-repeat: no-repeat;
+  display: block;
+  width: 90px;
+  height: 72px;
+  position: absolute;
+  left: 0;
+  top: 98px;
+  content: "";
+}
+
+.servises__item--enjoy::before {
+  background-image: url("../img/03.png");
+  background-repeat: no-repeat;
+  display: block;
+  width: 90px;
+  height: 72px;
+  position: absolute;
+  left: 0;
+  top: 98px;
+  content: "";
+}
+
+.servises__item-title {
+  width: 255px;
+  font-size: 32px;
+  line-height: 36px;
+  color: #333D4B;
+  margin-bottom: 42px;
+  font-family: "Fraunes";
+}
+
+.servises__item-text {
+  font-size: 16px;
+  line-height: 26px;
+  color: #333D4B;
+}
+
+.servises__link {
+  display: block;
+  margin-top: 64px;
+}
+
+.footer__container {
+  background-color: #2c343e;
+  padding: 48px 86px;
+}
+
+.footer__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  width: 125px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.about-intro {
+  background-image: url("../img/about-intro.jpg");
+  height: 450px;
+  padding-top: 137px;
+  padding-bottom: 137px;
+}
+
+.abaut-intro__content {
+  width: 445px;
+  padding-left: 86px;
+}
+
+.abaut-intro__title {
+  width: 188px;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 48px;
+  color: #FEFCF7;
+  font-family: "Fraunes";
+  margin-bottom: 24px;
+}
+
+.abaut-intro-text {
+  font-size: 16px;
+  line-height: 26px;
+  color: #FEFCF7;
+}
+
+.our-commitment {
+  padding-top: 258px;
+  padding-bottom: 334px;
+  padding-left: 570px;
+  position: relative;
+}
+
+.our-commitment__content {
+  width: 540px;
+}
+
+.our-commitment__content::before {
+  background-image: url("../img/commitment.jpg");
+  background-repeat: no-repeat;
+  content: "";
+  display: block;
+  width: 445px;
+  height: 520px;
+  position: absolute;
+  top: 168px;
+  left: 80px;
+}
+
+.our-commitment__title {
+  font-size: 40px;
+  line-height: 48px;
+  color: #333D4B;
+  font-family: "Fraunes";
+  margin-bottom: 32px;
+}
+
+.our-commitment__text {
+  font-size: 16px;
+  line-height: 26px;
+  color: rgba(51, 61, 75, 0.8);
+  mix-blend-mode: normal;
+}
+
+.quality {
+  border-radius: 10px;
+  padding-top: 88px;
+  padding-bottom: 176px;
+  position: relative;
+  width: 1280px;
+  margin: 0 auto;
+}
+
+.quality::before {
+  content: "";
+  display: block;
+  width: 445px;
+  height: 474px;
+  background-image: url("../img/bauaa.jpg");
+  border-radius: 10px;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -88px;
+  right: 85px;
+}
+
+.quality__container {
+  position: relative;
+  width: 1280px;
+}
+
+.quality__container::before {
+  background-color: #2c343e;
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  display: block;
+  z-index: -1;
+  height: 474px;
+  content: "";
+  top: -88px;
+}
+
+.quality__title {
+  font-size: 40px;
+  line-height: 48px;
+  color: #FEFCF7;
+  font-family: "Fraunes";
+  width: 517px;
+  margin-bottom: 32px;
+  padding-left: 86px;
+}
+
+.quality__text {
+  font-size: 16px;
+  line-height: 26px;
+  color: rgba(254, 252, 247, 0.8);
+  mix-blend-mode: normal;
+  width: 540px;
+  padding-left: 86px;
+}
+
+.headquarters {
+  padding-top: 168px;
+  padding-bottom: 168px;
+}
+
+.headquarters__title {
+  font-size: 24px;
+  line-height: 32px;
+  color: #83888F;
+  font-family: "Fraunes";
+  margin-bottom: 72px;
+  padding-left: 86px;
+}
+
+.headquarters__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 86px;
+}
+
+.headquarters__item {
+  width: 285px;
+  margin-right: 95px;
+  padding-top: 95px;
+  position: relative;
+}
+
+.headquarters__item:last-child {
+  margin-right: 0;
+}
+
+.headquarters__item--UK::before {
+  background-image: url("../img/UK.svg");
+  background-repeat: no-repeat;
+  display: block;
+  width: 40px;
+  height: 49px;
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+}
+
+.headquarters__item--Canada::before {
+  background-image: url("../img/canada.svg");
+  background-repeat: no-repeat;
+  display: block;
+  width: 51px;
+  height: 50px;
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+}
+
+.headquarters__item--Avstralia::before {
+  background-image: url("../img/avstralia.svg");
+  background-repeat: no-repeat;
+  display: block;
+  width: 49px;
+  height: 44px;
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+}
+
+.headquarters__item-title {
+  font-size: 32px;
+  line-height: 36px;
+  color: #333D4B;
+  font-family: "Fraunes";
+  margin-bottom: 24px;
+}
+
+.headquarters__item-text {
+  font-size: 16px;
+  line-height: 26px;
+  color: #333D4B;
+}
+/*# sourceMappingURL=main.css.map */

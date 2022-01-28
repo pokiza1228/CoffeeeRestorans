@@ -1,0 +1,24 @@
+.intro {
+    background-image: url("../img/intro-bg-desktop.jpg");
+    background-repeat: no-repeat;
+    height: 600px;
+    padding-top: 117px;
+}
+.intro__content {
+    width: 493px;
+    padding-left: 86px;
+}
+.intro__title {
+    color: #FEFCF7;
+    font-size: 72px;
+    line-height: 72px;
+    font-family: "Fraunes";
+}
+.intro__text {
+    font-size: 16px;
+    line-height: 26px;
+    color: rgba(254, 252, 247, 0.8);
+    mix-blend-mode: normal;
+    margin-top: 32px;
+    margin-bottom: 46px;
+}

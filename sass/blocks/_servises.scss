@@ -1,0 +1,101 @@
+.servises {
+}
+.servises__container {
+    padding: 351px 86px 0;
+    position: relative;
+    padding-bottom: 200px;
+}
+.servises__title {
+    font-size: 24px;
+    line-height: 32px;
+    color: #83888F;
+    margin-bottom: 80px;
+    font-family: "Fraunes";
+}
+.hr {
+    width: 760px;
+    height: 1px;
+    background-color: rgba(253, 214, 186, 1);
+    border: 2px solid #FDD6BA;
+    position: absolute;
+    left: 101px;
+    top: 476px;
+}
+.servises__list {
+    @include reset-list;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+.servises__item {
+    width: 285px;
+    margin-right: 95px;
+    height: 455px;
+    padding-top: 208px;
+    position: relative;
+}
+.servises__item::after {
+    content: "";
+    width: 31px;
+    height: 31px;
+    display: block;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 3px solid rgb(0, 174, 243);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.servises__item:last-child {
+    margin-right: 0;
+}
+.servises__item--pick::before {
+    background-image: url("../img/01.png");
+    background-repeat: no-repeat;
+    display: block;
+    width: 90px;
+    height: 72px;
+    position: absolute;
+    left: 0;
+    top: 98px;
+    content: "";
+}
+.servises__item--choose::before {
+    background-image: url("../img/02.png");
+    background-repeat: no-repeat;
+    display: block;
+    width: 90px;
+    height: 72px;
+    position: absolute;
+    left: 0;
+    top: 98px;
+    content: "";
+}
+.servises__item--enjoy::before {
+    background-image: url("../img/03.png");
+    background-repeat: no-repeat;
+    display: block;
+    width: 90px;
+    height: 72px;
+    position: absolute;
+    left: 0;
+    top: 98px;
+    content: "";
+}
+.servises__item-title {
+    width: 255px;
+    font-size: 32px;
+    line-height: 36px;
+    color: #333D4B;
+    margin-bottom: 42px;
+    font-family: "Fraunes";
+}
+.servises__item-text {
+    font-size: 16px;
+    line-height: 26px;
+    color: #333D4B;
+}
+.servises__link {
+    display: block;
+    margin-top: 64px;
+}

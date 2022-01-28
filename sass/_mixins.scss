@@ -1,0 +1,15 @@
+@mixin reset-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+@mixin section-bg {
+    background-color: rgba(44, 52, 62, 1);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    display: block;
+    z-index: -1;
+}

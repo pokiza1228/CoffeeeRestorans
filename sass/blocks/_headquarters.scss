@@ -1,0 +1,71 @@
+.headquarters {
+    padding-top: 168px;
+    padding-bottom: 168px;
+}
+.headquarters__title {
+    font-size: 24px;
+    line-height: 32px;
+    color: #83888F;
+    font-family: "Fraunes";
+    margin-bottom: 72px;
+    padding-left: 86px;
+}
+.headquarters__list {
+    @include reset-list;
+    display: flex;
+    padding-left: 86px;
+}
+.headquarters__item {
+    width: 285px;
+    margin-right: 95px;
+    padding-top: 95px;
+    position: relative;
+}
+.headquarters__item:last-child {
+    margin-right: 0;
+}
+.headquarters__item--UK::before {
+    background-image: url("../img/UK.svg");
+    background-repeat: no-repeat;
+    display: block;
+    width: 40px;
+    height: 49px;
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+}
+.headquarters__item--Canada::before {
+    background-image: url("../img/canada.svg");
+    background-repeat: no-repeat;
+    display: block;
+    width: 51px;
+    height: 50px;
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+}
+.headquarters__item--Avstralia::before {
+    background-image: url("../img/avstralia.svg");
+    background-repeat: no-repeat;
+    display: block;
+    width: 49px;
+    height: 44px;
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+}
+.headquarters__item-title {
+    font-size: 32px;
+    line-height: 36px;
+    color: #333D4B;
+    font-family: "Fraunes";
+    margin-bottom: 24px;
+}
+.headquarters__item-text {
+    font-size: 16px;
+    line-height: 26px;
+    color: #333D4B;
+}

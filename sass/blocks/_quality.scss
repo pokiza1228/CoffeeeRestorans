@@ -1,0 +1,52 @@
+.quality {
+    border-radius: 10px;
+    padding-top: 88px;
+    padding-bottom: 176px;
+    position: relative;
+    width: 1280px;
+    margin: 0 auto;
+}
+.quality::before {
+    content: "";
+    display: block;
+    width: 445px;
+    height: 474px;
+    background-image: url("../img/bauaa.jpg");
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -88px;
+    right: 85px;
+
+}
+.quality__container{
+    position: relative;
+    width: 1280px;
+}
+.quality__container::before {
+    @include section-bg;
+    height: 474px;
+    content: "";
+    top: -88px;
+   
+
+    
+
+}
+.quality__title {
+    font-size: 40px;
+    line-height: 48px;
+    color: #FEFCF7;
+    font-family: "Fraunes";
+    width: 517px;
+    margin-bottom: 32px;
+    padding-left: 86px;
+}
+.quality__text {
+    font-size: 16px;
+    line-height: 26px;
+    color: rgba(254, 252, 247, 0.8);
+    mix-blend-mode: normal;
+    width: 540px;
+    padding-left: 86px;
+}
