@@ -4,9 +4,9 @@
 }
 .nav__list-item {
     margin-right: 33px;
-}
-.nav__list-item:last-child {
-    margin-right: 0;
+    &:last-child {
+        margin-right: 0;
+    }
 }
 .nav__list-item-link {
     text-decoration: none;
@@ -16,7 +16,7 @@
     text-transform: uppercase;
     color: #83888F;
     font-weight: 700;
-}
-.nav__list-item-link:hover {
-    color: #333D4B;
+    &:hover {
+        color: #333D4B;
+    }
 }

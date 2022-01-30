@@ -20,9 +20,10 @@
     margin-right: 95px;
     padding-top: 95px;
     position: relative;
-}
-.headquarters__item:last-child {
-    margin-right: 0;
+
+    &:last-child {
+        margin-right: 0;
+    }
 }
 .headquarters__item--UK::before {
     background-image: url("../img/UK.svg");
