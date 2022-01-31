@@ -1,9 +1,22 @@
 .product {
-    height: 849px;
-    background-image: url("../img/product.svg");
-    background-repeat: no-repeat;
-    background-position: center top 136px;
-    padding-top: 262px;
+    padding-top: 196px;
+    padding-bottom: 200px;
+    position: relative;
+}
+.product__title {
+    font-size: 150px;
+    line-height: 1;
+    font-family: "Fraunes";
+    font-size: 170px;
+    position: absolute;
+    z-index: -1;
+    top: 100px;
+    left: calc(50% - 500px);
+    position: absolute;
+    color: transparent;
+    background-color: #83888F;
+    background-image: linear-gradient(180deg, rgba(254, 252, 247, 0.0001) 0%, #FEFCF7 100%);
+    -webkit-background-clip: text;
 }
 .product__list {
     @include reset-list;
