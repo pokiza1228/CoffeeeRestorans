@@ -11,15 +11,14 @@
     color: #83888F;
     margin-bottom: 80px;
     font-family: "Fraunes";
-}
-.hr {
-    width: 760px;
-    height: 1px;
-    background-color: rgba(253, 214, 186, 1);
-    border: 2px solid #FDD6BA;
-    position: absolute;
-    left: 101px;
-    top: 476px;
+    display: flex;
+    flex-direction: column;
+    &::after {
+        width: 760px;
+        background-color: rgba(253, 214, 186, 1);
+        height: 4px;
+        content: "";
+    }
 }
 .servises__list {
     @include reset-list;
@@ -89,6 +88,7 @@
     color: #333D4B;
     margin-bottom: 42px;
     font-family: "Fraunes";
+    font-weight: 900;
 }
 .servises__item-text {
     font-size: 16px;
