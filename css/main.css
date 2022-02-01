@@ -676,6 +676,7 @@ a {
   color: #83888F;
   margin-bottom: 80px;
   font-family: "Fraunes";
+  font-weight: 900;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -683,6 +684,7 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  position: relative;
 }
 
 .servises__title::after {
@@ -690,6 +692,9 @@ a {
   background-color: #fdd6ba;
   height: 4px;
   content: "";
+  position: absolute;
+  left: 15px;
+  top: 130px;
 }
 
 .servises__list {
