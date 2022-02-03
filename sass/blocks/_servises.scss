@@ -5,6 +5,16 @@
     position: relative;
     padding-bottom: 200px;
 }
+.servises__container--form {
+    padding: 100px 86px 0;
+    &::before {
+        @include section-bg;
+        content: "";
+        height: 100%;
+
+
+    }
+}
 .servises__title {
     font-size: 24px;
     line-height: 32px;

@@ -386,6 +386,20 @@ a {
   text-decoration: none;
 }
 
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  margin: -1px;
+}
+
 .container {
   max-width: 1280px;
   margin: 0 auto;
@@ -467,7 +481,6 @@ a {
 .main-link {
   width: 217px;
   height: 56px;
-  background-color: #66d2cf;
   font-size: 18px;
   line-height: 25px;
   text-align: center;
@@ -476,7 +489,16 @@ a {
   border-radius: 6px;
   text-decoration: none;
   font-family: "Fraunes";
+  background-color: #0e8784;
   font-weight: 900;
+}
+
+.main-link:hover {
+  background-color: #66d2cf;
+}
+
+.main-link:active {
+  background-color: #e2dedb;
 }
 
 .product {
@@ -668,6 +690,23 @@ a {
   padding: 351px 86px 0;
   position: relative;
   padding-bottom: 200px;
+}
+
+.servises__container--form {
+  padding: 100px 86px 0;
+}
+
+.servises__container--form::before {
+  background-color: #2c343e;
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  display: block;
+  z-index: -1;
+  content: "";
+  height: 100%;
 }
 
 .servises__title {
@@ -1032,6 +1071,124 @@ a {
 .headquarters__item-text {
   font-size: 16px;
   line-height: 26px;
+  color: #333D4B;
+}
+
+.forms__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.forms__text {
+  width: 730px;
+  position: relative;
+  margin-top: 88px;
+}
+
+.forms__title {
+  margin-bottom: 56px;
+  font-size: 40px;
+  line-height: 48px;
+  color: #83888F;
+}
+
+.forms__title::after {
+  content: "";
+  background-image: url("../img/icon.svg");
+  width: 18px;
+  height: 12px;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 0;
+  top: 18px;
+}
+
+.forms__summary {
+  width: 730px;
+  background-color: #2c343e;
+  padding: 27px 64px;
+  margin-top: 88px;
+}
+
+.forms__summary-title {
+  font-size: 16px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+  mix-blend-mode: normal;
+}
+
+.forms__summary-text {
+  font-size: 24px;
+  line-height: 40px;
+  color: #FFFFFF;
+  margin-top: 8px;
+}
+
+.forms__summary-chek {
+  color: #0e8784;
+}
+
+.forms__link {
+  display: block;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-bottom: 168px;
+}
+
+.drink {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.drink__label {
+  margin-right: 22px;
+}
+
+.drink__label:last-child {
+  margin-right: 0;
+}
+
+.drink__content {
+  width: 228px;
+  height: 250px;
+  background-color: #f4f1eb;
+  padding: 32px 26px 84px;
+  border-radius: 8px;
+}
+
+.drink__field:checked + .drink__content {
+  background-color: #0e8784;
+}
+
+.drink__field:checked:hover + .drink__content {
+  background-color: #0e8784;
+}
+
+.drink__field:checked:focus + .drink__content {
+  background-color: #0e8784;
+}
+
+.drink__field:hover + .drink__content {
+  background-color: #fdd6ba;
+  cursor: pointer;
+}
+
+.drink__title {
+  font-size: 24px;
+  line-height: 32px;
+  color: #333D4B;
+}
+
+.drink__text {
+  font-size: 16px;
+  line-height: 26px;
+  margin-top: 24px;
   color: #333D4B;
 }
 /*# sourceMappingURL=main.css.map */
