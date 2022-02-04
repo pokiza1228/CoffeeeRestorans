@@ -38,6 +38,7 @@
 .servises__list {
     @include reset-list;
     display: flex;
+    align-items: center;
     flex-wrap: wrap;
     list-style: none;
 }
@@ -98,6 +99,7 @@
 }
 .servises__item-title {
     width: 255px;
+    height: 65px;
     font-size: 32px;
     line-height: 36px;
     color: #333D4B;
@@ -113,4 +115,41 @@
 .servises__link {
     display: block;
     margin-top: 64px;
+}
+
+@media only screen and (max-width: 992px) {
+    .servises__item {
+        width: 200px;
+        margin-right: 50px;
+    }
+    .servises__item:last-child {
+        margin-right: 0;
+    }
+    .servises__title {
+        &::after {
+            width: 0;
+        }
+    }
+    .servises__item-title {
+        width: 200px;
+        font-size: 28px;
+    }
+    .servises__item-text {
+        font-size: 15px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .servises__container {
+        padding-left: 39px;
+    }
+    .servises__item {
+        margin-right: 10px;
+        
+    }
+    .servises__title {
+        &::after {
+            width: 430px;
+        }
+    }
+    
 }

@@ -44,7 +44,7 @@
     padding: 200px 48px 48px;
     position: relative;
     border-radius: 8px;
-
+    text-align: center;
 
     &:last-child {
         margin-right: 0;
@@ -84,7 +84,6 @@
 .advantage__item-title {
     font-size: 24px;
     line-height: 32px;
-    text-align: center;
     margin-bottom: 24px;
     font-family: "Fraunes";
     font-weight: 900;
@@ -92,5 +91,43 @@
 .advantage__item-text {
     font-size: 16px;
     line-height: 26px;
-    text-align: center;
+}
+
+@media only screen and (max-width: 992px) {
+    .advantage__item:last-child {
+        margin-top: 20px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .advantage__list {
+        flex-direction: column;
+        align-items: center;
+    }
+    .advantage__item {
+        padding: 0;
+        margin: 0;
+        width: 573px;
+        text-align: start;
+        padding: 41px 48px 41px 181px;
+        margin-bottom: 24px;
+    }
+    .advantage__item--best::before {
+       top: 62px;
+       left: 70px;
+    }
+    .advantage__item--benifit::before {
+        top: 62px;
+       left: 70px;
+    }
+    .advantage__item--shipping::before {
+        top: 62px;
+        left: 70px;
+    }
+    .advantage__list-content {
+        width: 340px;
+    }
+    .advantage__item:last-child {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
 }
