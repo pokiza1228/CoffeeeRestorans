@@ -19,7 +19,7 @@
 .footer__item {
   
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: $tablet) {
     .footer__content {
         padding: 55px 0;
         flex-direction: column;

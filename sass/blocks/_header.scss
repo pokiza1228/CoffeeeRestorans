@@ -9,18 +9,20 @@
 .header__btn {
     display: none;
 }
+@media only screen and (max-width: 540px) {
+    .header__nav {
+        display: none;
+    }
+    .header__btn {
+        display: inline-block;
+    }
+}
 @media only screen and (max-width: 375px) {
     .header {
         padding: 32px 0;
     }
-    .header__nav {
-        display: none;
-    }
     .header__logo {
         width: 40px;
         height: 18px;
-    }
-    .header__btn {
-        display: inline-block;
     }
 }

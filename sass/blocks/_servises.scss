@@ -117,7 +117,7 @@
     margin-top: 64px;
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: $tablet) {
     .servises__item {
         width: 200px;
         margin-right: 50px;
@@ -137,19 +137,4 @@
     .servises__item-text {
         font-size: 15px;
     }
-}
-@media only screen and (max-width: 768px) {
-    .servises__container {
-        padding-left: 39px;
-    }
-    .servises__item {
-        margin-right: 10px;
-        
-    }
-    .servises__title {
-        &::after {
-            width: 430px;
-        }
-    }
-    
 }
