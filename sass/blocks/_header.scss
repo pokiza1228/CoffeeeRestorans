@@ -76,17 +76,21 @@
      line-height: 32px;
      color: #333D4B;
     & .nav__list {
+        display: none;
         flex-direction: column;
         align-items: center;
     }
  }
- .header__nav--opened {
-    display: flex;
-}
 @media only screen and (max-width: $mobile) {
     .header__logo {
         width: 140px;
         height: 18px;
+    }
+    .header__nav--opened {
+        display: flex;
+        & .nav__list {
+            display: flex;
+        }
     }
     .header {
         padding: 32px 0;
