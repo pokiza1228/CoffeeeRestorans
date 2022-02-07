@@ -62,6 +62,27 @@
 .header__btn--opened::before {
     transform: translate(-50%, -50%) rotate(-45deg);
 }
+.header__nav {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    padding-top: 40px;
+    background-image: linear-gradient(180deg, rgba(254, 252, 247, 0.504981) 0%, #FEFCF7 55.94%);
+    left: 0;
+    top: 100%;
+    z-index: 2;
+    font-size: 24px;
+     line-height: 32px;
+     color: #333D4B;
+    & .nav__list {
+        flex-direction: column;
+        align-items: center;
+    }
+ }
+ .header__nav--opened {
+    display: flex;
+}
 @media only screen and (max-width: $mobile) {
     .header__logo {
         width: 140px;
@@ -69,24 +90,6 @@
     }
     .header {
         padding: 32px 0;
-    }
-    .header__nav {
-       // display: none;
-       position: absolute;
-       width: 100%;
-       height: 500px;
-       padding-top: 40px;
-       background-image: linear-gradient(180deg, rgba(254, 252, 247, 0.504981) 0%, #FEFCF7 55.94%);
-       left: 0;
-       top: 100%;
-       z-index: 2;
-       font-size: 24px;
-        line-height: 32px;
-        color: #333D4B;
-       & .nav__list {
-           flex-direction: column;
-           align-items: center;
-       }
     }
     .header__btn {
         display: inline-block;
