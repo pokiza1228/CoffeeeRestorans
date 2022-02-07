@@ -1,11 +1,10 @@
 .nav {
-    font-size: 12px;
-    line-height: 15px;
-    color: #83888F;
+    
 }
 .nav__list {
     @include reset-list;
     display: flex;
+    color: #333D4B;
 }
 .nav__list-item {
     margin-right: 33px;
