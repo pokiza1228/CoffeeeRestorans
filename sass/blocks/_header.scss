@@ -1,28 +1,94 @@
 .header {
-    padding: 43px 0;
+    position: relative;
+    padding: 0;
 }
 .header__container {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 43px 10px;
 }
 .header__btn {
     display: none;
-}
-@media only screen and (max-width: 540px) {
-    .header__nav {
-        display: none;
+    padding: 0;
+    margin: 0;
+    border: none;
+    background-color: #fff;
+    height: 18px;
+    width: 16px;
+    &::after {
+        content: "";
+        width: 100%;
+        height: 3px;
+        background-color: #000;
+        display: block;
+        border-radius: 2px;
+        transition: 0.3s ease all;
     }
-    .header__btn {
-        display: inline-block;
+    &::before {
+        content: "";
+        width: 100%;
+        height: 3px;
+        background-color: #000;
+        display: block;
+        border-radius: 2px;
+        transition: 0.3s ease all;
+    }
+    &-deskription {
+        width: 100%;
+        height: 3px;
+        background-color: #000;
+        display: block;
+        margin-top: 3px;
+        margin-bottom: 3px;
+        border-radius: 2px;
     }
 }
-@media only screen and (max-width: 375px) {
+.header__btn--opened .header__btn-deskription {
+    display: none;
+}
+.header__btn--opened {
+    position: relative;
+}
+.header__btn--opened::after,
+.header__btn--opened::before {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+.header__btn--opened::after {
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+.header__btn--opened::before {
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+@media only screen and (max-width: $mobile) {
+    .header__logo {
+        width: 140px;
+        height: 18px;
+    }
     .header {
         padding: 32px 0;
     }
-    .header__logo {
-        width: 40px;
-        height: 18px;
+    .header__nav {
+       // display: none;
+       position: absolute;
+       width: 100%;
+       height: 500px;
+       padding-top: 40px;
+       background-image: linear-gradient(180deg, rgba(254, 252, 247, 0.504981) 0%, #FEFCF7 55.94%);
+       left: 0;
+       top: 100%;
+       z-index: 2;
+       font-size: 24px;
+        line-height: 32px;
+        color: #333D4B;
+       & .nav__list {
+           flex-direction: column;
+           align-items: center;
+       }
+    }
+    .header__btn {
+        display: inline-block;
     }
 }

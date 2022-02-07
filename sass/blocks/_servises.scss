@@ -26,7 +26,7 @@
     flex-direction: column;
     position: relative;
     &::after {
-        width: 760px;
+        width: 60%;
         background-color: rgba(253, 214, 186, 1);
         height: 4px;
         content: "";
@@ -43,9 +43,8 @@
     list-style: none;
 }
 .servises__item {
-    width: 285px;
+    width: calc((100% - 400px) / 3);
     margin-right: 95px;
-    height: 455px;
     padding-top: 208px;
     position: relative;
     &::after {
@@ -98,8 +97,7 @@
     content: "";
 }
 .servises__item-title {
-    width: 255px;
-    height: 65px;
+    height: 96px;
     font-size: 32px;
     line-height: 36px;
     color: #333D4B;
@@ -116,25 +114,65 @@
     display: block;
     margin-top: 64px;
 }
-
 @media only screen and (max-width: $tablet) {
-    .servises__item {
-        width: 200px;
-        margin-right: 50px;
-    }
-    .servises__item:last-child {
-        margin-right: 0;
+    .servises__container {
+        padding: 351px 10px 0;
     }
     .servises__title {
         &::after {
-            width: 0;
+            width: calc(((100% - 40px) / 3) * 2 + 20px);
         }
     }
     .servises__item-title {
-        width: 200px;
         font-size: 28px;
+        line-height: 32px;
     }
     .servises__item-text {
         font-size: 15px;
+        line-height: 25px;
+    }
+    .servises__item {
+        margin-right: 10px;
+        width: calc((100% - 40px) / 3);
     }
 }
+@media only screen and (max-width: $mobile) {
+    .servises__title {
+        &::after {
+            display: none;
+        }
+        text-align: center;
+        margin-bottom: 0;
+    }
+    .servises__list {
+        display: block;
+    }
+    .servises__item {
+        &::after {
+            display: none;
+        }
+        text-align: center;
+        margin: 0;
+        margin: 0 auto;
+        &:last-child{
+            margin: 0 auto;
+        }
+        width: calc(100% - 48px);
+    }
+    .servises__item--pick::before {
+        left: calc(50% - 36px);
+    }
+    .servises__item--choose::before {
+        left: calc(50% - 36px);
+    }
+    .servises__item--enjoy::before {
+       left: calc(50% - 36px);
+    }
+    .servises__link {
+        margin: 0 auto;
+        margin-top: 64px;
+        margin-bottom: 120px;
+    }
+}
+
+

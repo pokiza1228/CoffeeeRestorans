@@ -20,8 +20,10 @@
   
 }
 @media only screen and (max-width: $tablet) {
+    .footer__container {
+        margin-top: 120px;
+    }
     .footer__content {
-        padding: 55px 0;
         flex-direction: column;
         align-self: center;
         justify-content: space-between;
@@ -30,4 +32,11 @@
     .footer__logo {
         margin-bottom: 32px;
     }
+}
+@media only screen and (max-width: $mobile) {
+    .footer__nav {
+        display: block;
+        text-align: center;
+    }
+    
 }

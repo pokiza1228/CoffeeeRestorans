@@ -10,9 +10,9 @@
 </head>
 
 <body>
-    <header class="header">
-        <div class="header__container container">
-            <a class="header__logo" href="#"><img src="img/site-logo.svg" alt="logo" width="236" height="26"></a>
+    <header class="header container">
+        <div class="header__container">
+            <a class="header__logo" href="index.html"><img src="img/site-logo.svg" alt="logo" width="236" height="26"></a>
             <nav class="nav header__nav">
                 <ul class="nav__list">
                     <li class="nav__list-item"><a class="nav__list-item-link" href="#">HOME</a></li>
@@ -20,23 +20,24 @@
                     <li class="nav__list-item"><a class="nav__list-item-link" href="#">Create your plan</a></li>
                 </ul>
             </nav>
-            <button class="header__btn">btn</button>
+            <button class="header__btn header__btn--opened"><span class="header__btn-deskription"></span></button>
+
         </div>
     </header>
     <main class="main">
         <div class="container intro">
             <div class="container">
-                <div class="intro__content">
+                <div class="intro__content header__btn--opened">
                     <p class="intro__title">Great coffee made simple.</p>
                     <p class="intro__text">Start your mornings with the world’s best coffees. Try our expertly curated
                         artisan coffees from
                         our best roasters delivered directly to your door, at your schedule.</p>
-                    <a class="main-link" href="#">Create your plan</a>
+                    <a class="main-link intro__link" href="#">Create your plan</a>
                 </div>
             </div>
         </div>
-        <section class="product">
-            <div class="container product__container">
+        <section class="product container">
+            <div class="product__container">
                 <h2 class="product__title">our collaction</h2>
                 <ul class="product__list">
                     <li class="product__item">
@@ -70,8 +71,8 @@
                 </ul>
             </div>
         </section>
-        <section class="advantage">
-            <div class="container advantage__container">
+        <section class="advantage container">
+            <div class="advantage__container">
                 <h2 class="advantage__title">Why choose us?</h2>
                 <p class="advantage__text">A large part of our role is choosing which particular coffees will be
                     featured
@@ -105,12 +106,12 @@
                 </ul>
             </div>
         </section>
-        <section class="servises">
-            <div class="container servises__container">
+        <section class="servises container">
+            <div class="servises__container">
                 <h2 class="servises__title">How it works</h2>
                 <ol class="servises__list">
                     <li class="servises__item servises__item--pick">
-                        <h3 class="servises__item-title">Pick your <br> coffee</h3>
+                        <h3 class="servises__item-title">Pick your coffee</h3>
                         <p class="servises__item-text">Select from our evolving range of artisan coffees. Our beans are
                             ethically sourced and we pay
                             fair prices for them. There are new coffees in all profiles every month for you to try out.
@@ -135,15 +136,15 @@
             </div>
         </section>
     </main>
-    <footer class="footer">
-        <div class="container footer__container">
+    <footer class="footer container">
+        <div class="footer__container">
             <div class="container-basic footer__content">
                 <a class="footer__logo" href="#"><img src="img/footer-logo.svg" alt="logo" width="236" height="26"></a>
                 <nav class="nav">
-                    <ul class="nav__list">
-                        <li class="nav__list-item"><a class="nav__list-item-link" href="#">HOME</a></li>
-                        <li class="nav__list-item"><a class="nav__list-item-link" href="#">ABOUT US</a></li>
-                        <li class="nav__list-item"><a class="nav__list-item-link" href="#">Create your plan</a></li>
+                    <ul class="nav__list footer__nav">
+                        <li class="nav__list-item footer__nav-item"><a class="nav__list-item-link" href="#">HOME</a></li>
+                        <li class="nav__list-item footer__nav-item"><a class="nav__list-item-link" href="#">ABOUT US</a></li>
+                        <li class="nav__list-item footer__nav-item"><a class="nav__list-item-link" href="#">Create your plan</a></li>
                     </ul>
                 </nav>
                 <ul class="footer__list">
