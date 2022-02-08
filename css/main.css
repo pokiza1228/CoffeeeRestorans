@@ -667,7 +667,9 @@ a {
 }
 
 .main-link {
-  width: 217px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   height: 56px;
   font-size: 18px;
   line-height: 25px;
