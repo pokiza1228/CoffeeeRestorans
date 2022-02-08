@@ -69,13 +69,13 @@
     
 }
 @media  only screen and (max-width: 710px) {
-    .intro {
+    .intro__container {
         background-image: url("../img/intro-tablet.jpg");
         height: 500px;
     }
 }
 @media  only screen and (max-width: 375px) {
-    .intro {
+    .intro__container {
         background-image: url("../img/intro-mobile.jpg");
     }    
 }
