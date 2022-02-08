@@ -566,6 +566,7 @@ a {
   letter-spacing: 0.923077px;
   text-transform: uppercase;
   font-weight: 700;
+  color: #292b2e;
 }
 
 .nav__list-item-link:hover {
@@ -582,7 +583,7 @@ a {
   }
 }
 
-.intro {
+.intro__container {
   background-image: url("../img/intro-bg-desktop.jpg");
   background-repeat: no-repeat;
   background-position: center center;
