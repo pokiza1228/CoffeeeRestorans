@@ -1277,24 +1277,20 @@ a {
 .our-commitment {
   padding-top: 258px;
   padding-bottom: 334px;
-  padding-left: 570px;
   position: relative;
 }
 
 .our-commitment__content {
-  width: 540px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.our-commitment__content::before {
-  background-image: url("../img/commitment.jpg");
-  background-repeat: no-repeat;
-  content: "";
-  display: block;
-  width: 445px;
-  height: 520px;
-  position: absolute;
-  top: 168px;
-  left: 80px;
+.text {
+  width: 540px;
 }
 
 .our-commitment__title {
