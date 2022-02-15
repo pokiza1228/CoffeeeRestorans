@@ -376,6 +376,7 @@ body {
   margin: 0 auto;
   font-family: "Barlow", Arial, Helvetica, sans-serif;
   font-weight: 400;
+  margin-top: 112px;
 }
 
 img {
@@ -408,8 +409,12 @@ a {
 }
 
 .header {
-  position: relative;
-  padding: 0;
+  position: fixed;
+  background-color: #fff;
+  width: 100%;
+  top: 0;
+  z-index: 3;
+  padding: 43px 10px;
 }
 
 .header__container {
@@ -422,7 +427,6 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 43px 10px;
 }
 
 .header__nav {
@@ -1328,19 +1332,23 @@ a {
 
 .quality::before {
   content: "";
-  display: block;
-  width: 445px;
-  height: 474px;
   background-image: url("../img/bauaa.jpg");
-  border-radius: 10px;
   background-repeat: no-repeat;
   position: absolute;
-  top: -88px;
-  right: 85px;
 }
 
 .quality__container {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 1280px;
 }
 
@@ -1356,6 +1364,16 @@ a {
   height: 474px;
   content: "";
   top: -88px;
+}
+
+.quality__img {
+  display: block;
+  width: 445px;
+  height: 474px;
+  border-radius: 10px;
+  position: absolute;
+  top: -130px;
+  right: 85px;
 }
 
 .quality__title {
